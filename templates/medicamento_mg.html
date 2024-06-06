@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medicamento</title>
+    <link rel="stylesheet" href="static/estilomedicamento.css">
+</head>
+<body>
+    <header>
+        <nav class="cabeçalho">
+        <div class="logovet">
+        <img class="logo" src="static/img/logovetlife.jpg"
+        alt="Logo da empresa"/> </div>
+        <a href="/"><button class="palavras">HOME</button>
+        </a>
+        <a href= "/serviço"><button class="palavras">SERVIÇOS</button>
+        </a>
+
+        <a href="/contato"><button class="palavras">CONTATO</button>
+        </a>
+
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1> Calculadora de medicamento por quilograma do animal </h1>
+            </div>
+            <div>
+                <form action="/medicamento_mg" method="post"> <!-- Formulário para enviar o número para verificação -->
+                    <label for="peso">Digite o peso do seu animal:</label> <!-- Rótulo do campo de entrada -->
+                    <input type="number" id="peso" name="peso" required> <!-- Campo de entrada para o número -->
+                    <button type="submit">Verificar</button> <!-- Botão de envio do formulário -->
+                </form>
+                <div id="resultado">
+                    {% if resultado %} <!-- Verifica se há um resultado a ser exibido -->
+                        {{ resultado }} <!-- Exibe o resultado da verificação (par ou ímpar) -->
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+    <footer>
+        <p>© Copyright - 2024 Clínica veterinária. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

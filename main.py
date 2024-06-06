@@ -131,6 +131,23 @@ def medicamento_mg():
         medicamento_mg = (peso * doseremedio)
         return render_template('medicamento_mg.html', medicamento_mg=medicamento_mg)
 
+@app.route('/')
+def quantidade_mililitros_soro.html():
+return render_template('quantidade_mililitros_soro.html')
 
+
+@app.route('/quantidade_mililitros_soro/', methods=['POST'])
+def verificar_quantidade_mililitros_soro():
+
+peso_animal = float(request.form['peso_animal'])
+grau_desidatracao = request.form['grau_desidatracao']
+if grau_desidatracao.lower() == 'leve':
+volume_fluidoterapia = 50 * peso_animal
+elif grau_desidatracao.lower() == 'moderada':
+volume_fluidoterapia = 75 * peso_animal
+elif grau_desidatracao.lower() == 'grave':
+volume_fluidoterapia = 100 * peso_animal
+
+return render_template('quantidade_mililitros_soro.html')
 if __name__ == '__main__':
     app.run(debug=True)
