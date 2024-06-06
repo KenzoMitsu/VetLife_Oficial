@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --vermelho: red;
+    --branco:azure; 
+    --azulclaro:lightcyan;
+    --cor-principal: rgb(95, 158, 160);
+    --altura: 100px;
+
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items:center;
+    background-color:cornsilk;
+    height: 30vh;
+    gap: 10px;
+    background-color: var(--cor-principal);
+}
+
+.logo {
+    border-radius: 60%;
+    height: 120px;
+    width: 120px;
+}
+
+.palavras {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:none;
+    background-color:cadetblue;
+    color:aliceblue;
+    font-size: larger;
+    font-weight: 700px;
+}
+
+.pet_fundo1 {
+    height: 40%;
+    width: 50%;
+}
+
+.parteum {
+    background-color:var(--azulclaro);
+    display:flex;
+}
+
+.nome {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 500%;
+    justify-content: space-between;
+    align-self:center;
+}
+
+.saibamais {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-self: end;
+    justify-content: right;
+    color:white;
+    height: 110px;
+    width: 200px;
+    background-color:rgb(127, 171, 209) ;
+    font-weight: 700;
+    align-self:center;
+
+}
+.consulta {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:none;
+    background-color: var(--azulclaro);
+    color:aliceblue;
+    font-size: larger;
+    font-weight: 700px;
+}
+
+.partedoiss {
+    border-radius: 10%;
+    height: 520px;
+    width: 570px;
+    background-color: #E5FAFF;
+    justify-content: center;
+    text-align: center;
+    border-style: none;
+}
+
+.foto {
+    border-radius: 10%;
+    height: 350px;
+    width: 350px;
+}
+
+.apresentacao {
+    height: 700px;
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    background-color: #5cc9fb;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
